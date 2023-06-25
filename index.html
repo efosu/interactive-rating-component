@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div role="form">
+      <div role="img">
+        <img src="./images/icon-star.svg" alt="star icon">
+      </div>
+    <div class="content" role="contentinfo">
+      <h3>How did we do?</h3>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+    </div>
+      <form>
+        <label for="one">
+          1
+          <input type="radio" name="rate" id="one" value="1" checked>
+        </label>
+        <label for="two">
+          2
+          <input type="radio" name="rate" id="two" value="2" >
+        </label>
+        <label for="three">
+          3
+          <input type="radio" name="rate" id="three" value="3">
+        </label>
+        <label for="four">
+          4
+          <input type="radio" name="rate" id="four" value="4">
+        </label>
+        <label for="five">
+          5
+          <input type="radio" name="rate" id="five" value="5">
+        </label>
+      </form>
+      <button type="button">Submit</button>
+
+    </div>
+    <div class="modal" id="modal">
+      <img src="./images/illustration-thank-you.svg" alt="thank-you icon">
+      <div class="result_wrapper">
+        <span>You selected <span id="result">1</span> out of 5</span>
+      </div>
+      <div role="contentinfo">
+        <h3>Thank you!</h3>
+        <p>
+          We appreciate you taking the time to give a  rating.  If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+</html>
