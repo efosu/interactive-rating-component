@@ -124,7 +124,7 @@ main:not(#\#) {
             }
 
 
-[role='form']:not(#\#) .content h3 {
+[role='form']:not(#\#) .content h1 {
                 color: white;
                 font-size: 2em;
             }
@@ -211,6 +211,7 @@ button:hover:not(#\#), button:focus:not(#\#), button:focus-visible:not(#\#) {
         border-radius: var(--border-radius);
         margin: 2em 0;
         margin: var(--margin);
+        max-width: 25em;
     }
 
 
@@ -239,22 +240,23 @@ button:hover:not(#\#), button:focus:not(#\#), button:focus-visible:not(#\#) {
         }
 
 
-.modal:not(#\#) [role="contentinfo"] {
+.modal:not(#\#) {
             display: flex;
             flex-direction: column;
             gap: 1em;
         }
 
 
-.modal:not(#\#) [role="contentinfo"] h3 {
+.modal:not(#\#) h1, h2 {
                 color:  white;
                 font-size: 2em;
             }
 
 
-.modal:not(#\#) [role="contentinfo"] p {
+.modal:not(#\#) p {
                 color: hsl(216, 12%, 54%);
                 color: var(--medium-gray-clr);
                 max-width: 35ch;
                 line-height: 1.5;
+                margin-top: 0.5em;
             }
