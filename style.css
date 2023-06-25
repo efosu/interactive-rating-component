@@ -37,7 +37,7 @@ main {
         }
 
 main .modal {
-            display: none;
+            display: none !important;
         }
 
 main.close [role="form"] {
@@ -223,11 +223,11 @@ button:hover:not(#\#), button:focus:not(#\#), button:focus-visible:not(#\#) {
     }
         }
 
-
+/* 
 .modal:target:not(#\#) {
             display: flex;
         }
-
+ */
 
 .modal:not(#\#) .result_wrapper {
            
